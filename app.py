@@ -23,10 +23,10 @@ features = [
     'Age'
 ]
 
-form_container_html = '''
+form_container_html2 = '''
 <div style="background-color:#7be5ff; padding:20px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
 '''
-st.markdown(form_container_html, unsafe_allow_html=True)
+st.markdown(form_container_html2, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
     cols = st.columns(3)
     
