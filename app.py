@@ -30,7 +30,7 @@ features = [
 ]
 
 form_container_html = '''
-<div style="background-color:#7be5ff; padding:50px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
+<div style="background-color:#7be5ff; padding:5px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
 '''
 st.markdown(form_container_html, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
