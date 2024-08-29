@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-title_html = '<p style="font-family:sans-serif; color:white; font-size: 42px; text-align:center;">Prédiction Objective du Patrimoine</p>'
+title_html = '<p style="font-family:sans-serif; color:light blue; font-size: 42px; text-align:center;">Prédiction Objective du Patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
 
