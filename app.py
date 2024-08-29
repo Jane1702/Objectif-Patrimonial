@@ -25,7 +25,7 @@ st.markdown(
     .stApp {
         background-color: #ADD8E6; /* Light blue background */
     }
-    .stTitle h1 {
+    .stTitle  {
         color: #ffffff; /* White title text */
         text-align: center;
         font-weight: bold;
