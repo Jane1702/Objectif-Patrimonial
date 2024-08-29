@@ -11,7 +11,7 @@ background_html = '''
 </style>
 '''
 st.markdown(background_html, unsafe_allow_html=True)
-title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction Objective du Patrimoine</p>'
+title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction objective du patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
 
