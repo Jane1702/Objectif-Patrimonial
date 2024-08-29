@@ -21,18 +21,7 @@ features = [
 ]
 st.markdown("""
     <style>
-    .stApp {
-        background-color: #f0f2f6;
-        font-family: 'Arial', sans-serif;
-    }
-
-    .stTitle h1 {
-        color: #4B6584;
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.5em;
-        margin-bottom: 20px;
-    }
+   
 
     .stForm {
         background-color: #ffffff;
@@ -41,37 +30,7 @@ st.markdown("""
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .stNumberInput label {
-        color: #4B6584;
-        font-weight: bold;
-    }
 
-    .stNumberInput input {
-        border-radius: 10px;
-        border: 1px solid #dcdde1;
-        padding: 10px;
-    }
-
-    .stButton button {
-        background-color: #3867d6;
-        color: #ffffff;
-        border-radius: 10px;
-        padding: 10px 20px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .stButton button:hover {
-        background-color: #274c9b;
-    }
-
-    .stForm form {
-        margin: 0 auto;
-    }
-
-    .stColumn {
-        padding: 0 10px;
-    }
     </style>
     """, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
