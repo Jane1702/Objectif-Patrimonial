@@ -20,42 +20,10 @@ features = [
     'Age'
 ]
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #ADD8E6; /* Light blue background */
-    }
-    .stTitle h1 {
-        color: #ffffff; /* White title text */
-        text-align: center;
-        font-weight: bold;
-    }
-    .stForm {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    }
-    .stNumberInput label {
-        color: #333333; /* Dark gray label text */
-        font-weight: bold;
-    }
-    .stButton button {
-        background-color: #0044cc;
-        color: #0044cc;
-        border-radius: 10px;
-        padding: 10px 20px;
-    }
-    .stButton button:hover {
-        background-color: #ffffff;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-
+form_container_html = '''
+<div style="background-color:white; padding:20px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
+'''
+st.markdown(form_container_html, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
     cols = st.columns(3)
     
