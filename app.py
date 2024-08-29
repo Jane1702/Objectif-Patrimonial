@@ -42,7 +42,7 @@ with st.form(key='prediction_form'):
     }
 
     submit_button = st.form_submit_button(label='Predict')
-
+st.markdown('</div>', unsafe_allow_html=True)
 if submit_button:
     input_df = pd.DataFrame([data])
     try:
