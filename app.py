@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-logo_url = 'path/to/your/logo.png'  # Replace with the path to your local image or URL
+logo_url = 'logo.png'  
 
 title_html = f'''
 <div style="display: flex; align-items: center; background-color: #f0f2f6; padding: 10px; border-bottom: 1px solid #e0e0e0;">
