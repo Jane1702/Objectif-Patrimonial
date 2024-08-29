@@ -19,22 +19,7 @@ features = [
     'GP-Total actif brut',
     'Age'
 ]
-st.markdown("""
-    <style>
-   
-
-    .stForm {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-
-    </style>
-    """, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
-    st.markdown('<div class="stForm">', unsafe_allow_html=True)
     cols = st.columns(3)
     
     data = {
@@ -52,8 +37,6 @@ with st.form(key='prediction_form'):
     }
 
     submit_button = st.form_submit_button(label='Predict')
-    st.markdown('</div>', unsafe_allow_html=True)
-
 
 if submit_button:
     input_df = pd.DataFrame([data])
