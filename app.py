@@ -2,7 +2,6 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-st.title('Patrimonial Objective Prediction')
 
 model = joblib.load('Objectif Patrimonial.pkl')
 
@@ -54,6 +53,8 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+st.title('Patrimonial Objective Prediction')
 
 with st.form(key='prediction_form'):
     cols = st.columns(3)
