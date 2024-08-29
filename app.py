@@ -51,13 +51,12 @@ if submit_button:
         st.success(f'Predicted Patrimonial Objective: {prediction}')
     except Exception as e:
         st.error(f'Error during prediction: {e}')
-st.markdown(
-    """
-    <style>
-    .stApp {
+
+background_html = '''
+<style>
+    body {
         background-color: #ADD8E6; /* Light blue background */
     }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+</style>
+'''
+st.markdown(background_html, unsafe_allow_html=True)
