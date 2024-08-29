@@ -2,9 +2,15 @@ import streamlit as st
 import joblib
 import pandas as pd
 
+logo_url = 'path/to/your/logo.png'  # Replace with the path to your local image or URL
 
+title_html = f'''
+<div style="display: flex; align-items: center; background-color: #f0f2f6; padding: 10px; border-bottom: 1px solid #e0e0e0;">
+    <img src="{logo_url}" style="width: 80px; height: auto; margin-right: 20px;">
+    <p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:left; margin:0;">Prédiction objective du patrimoine</p>
+</div>
+'''
 
-title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction objective du patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
 
@@ -24,7 +30,7 @@ features = [
 ]
 
 form_container_html = '''
-<div style="background-color:#7be5ff; padding:20px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
+<div style="background-color:#7be5ff; padding:50px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
 '''
 st.markdown(form_container_html, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
