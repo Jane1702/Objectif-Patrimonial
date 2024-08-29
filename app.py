@@ -5,16 +5,7 @@ import pandas as pd
 title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction Objective du Patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #ADD8E6; /* Light blue background */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 features = [
     'Nombre enfants',
@@ -60,3 +51,13 @@ if submit_button:
         st.success(f'Predicted Patrimonial Objective: {prediction}')
     except Exception as e:
         st.error(f'Error during prediction: {e}')
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #ADD8E6; /* Light blue background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
