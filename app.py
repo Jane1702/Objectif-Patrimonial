@@ -19,6 +19,42 @@ features = [
     'GP-Total actif brut',
     'Age'
 ]
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #ADD8E6; /* Light blue background */
+    }
+    .stTitle h1 {
+        color: #ffffff; /* White title text */
+        text-align: center;
+        font-weight: bold;
+    }
+    .stForm {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+    .stNumberInput label {
+        color: #333333; /* Dark gray label text */
+        font-weight: bold;
+    }
+    .stButton button {
+        background-color: #0044cc;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    .stButton button:hover {
+        background-color: #002a80;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 with st.form(key='prediction_form'):
     cols = st.columns(3)
     
