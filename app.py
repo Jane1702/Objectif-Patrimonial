@@ -3,14 +3,17 @@ import joblib
 import pandas as pd
 
 
-background_html = '''
-<style>
-    body {
-        background-color: #ADD8E6; /* Light blue background */
+st.markdown(
+    """
+    <style>
+    .css-1v3fvcr { /* Selector for the background area of the app */
+        background-color: #ADD8E6 !important; /* Light blue background */
     }
-</style>
-'''
-st.markdown(background_html, unsafe_allow_html=True)
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction objective du patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
