@@ -3,16 +3,6 @@ import joblib
 import pandas as pd
 
 
-st.markdown(
-    """
-    <style>
-    .css-1v3fvcr { /* Selector for the background area of the app */
-        background-color: #ADD8E6 !important; /* Light blue background */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction objective du patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
@@ -34,7 +24,7 @@ features = [
 ]
 
 form_container_html = '''
-<div style="background-color:white; padding:20px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
+<div style="background-color:#7be5ff; padding:20px; border-radius:10px; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);">
 '''
 st.markdown(form_container_html, unsafe_allow_html=True)
 with st.form(key='prediction_form'):
