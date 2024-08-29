@@ -26,13 +26,13 @@ features = [
 ]
 columns_html = '''
 <div style="display: flex; justify-content: space-between;">
-    <div style="flex: 1; background-color: #e0f7fa; padding: 10px; margin-right: 10px;">
+    <div style="flex: 1; background-color: #7be5ff; padding: 10px; margin-right: 10px;">
         {col1}
     </div>
-    <div style="flex: 1; background-color: #f1f8e9; padding: 10px; margin-right: 10px;">
+    <div style="flex: 1; background-color: #7be5ff; padding: 10px; margin-right: 10px;">
         {col2}
     </div>
-    <div style="flex: 1; background-color: #fbe9e7; padding: 10px;">
+    <div style="flex: 1; background-color: #7be5ff; padding: 10px;">
         {col3}
     </div>
 </div>
