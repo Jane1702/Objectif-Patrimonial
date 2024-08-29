@@ -28,10 +28,8 @@ form_container_html = '''
 '''
 st.markdown(form_container_html, unsafe_allow_html=True)
 with st.container():
-    with st.form(key='prediction_form'):
-        cols = st.columns(3)
-        
-        data = {
+    cols = st.columns(3)
+    data = {
             'Nombre enfants': cols[0].number_input('Nombre enfants', min_value=0, step=1),
             'GP-Impôt sur le Revenu brut': cols[1].number_input('GP-Impôt sur le Revenu brut', value=0.0, format='%f'),
             'GP-Revenus professionnels foyer': cols[2].number_input('GP-Revenus professionnels foyer', value=0.0, format='%f'),
@@ -43,9 +41,11 @@ with st.container():
             'GP-Solde actif&passif': cols[2].number_input('GP-Solde actif&passif', value=0.0, format='%f'),
             'GP-Total actif brut': cols[0].number_input('GP-Total actif brut', value=0.0, format='%f'),
             'Age': cols[1].number_input('Age', min_value=0, step=1)
-        }
-    
-        submit_button = st.form_submit_button(label='Predict')
+        }    
+        
+    submit_button = st.form_submit_button(label='Predict')
+st.markdown('</div>', unsafe_allow_html=True)
+
 if submit_button:
     input_df = pd.DataFrame([data])
     try:
