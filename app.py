@@ -2,7 +2,8 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-
+title_html = '<p style="font-family:sans-serif; color:white; font-size: 42px; text-align:center;">Patrimonial Objective Prediction</p>'
+st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
 
 features = [
@@ -54,7 +55,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title('Patrimonial Objective Prediction')
 
 with st.form(key='prediction_form'):
     cols = st.columns(3)
