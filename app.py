@@ -54,9 +54,9 @@ if submit_button:
     input_df = pd.DataFrame([data])
     try:
         prediction = model.predict(input_df)[0]
-        st.success(f'<p style="font-family:Arial; font-size:24px; color:#0a9250;">Prédiction de l\'objectif patrimonial : {prediction}</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-family:Arial; font-size:24px; color:#0a9250;">Prédiction de l\'objectif patrimonial : {prediction}</p>', unsafe_allow_html=True)
     except Exception as e:
-        st.error(f'<p style="font-family:Arial; font-size:24px; color:#d9534f;">Erreur lors de la prédiction : {e}</p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-family:Arial; font-size:24px; color:#d9534f;">Erreur lors de la prédiction : {e}</p>', unsafe_allow_html=True)
 """
 title_html = '<p style="font-family:sans-serif; color:#137a93; font-size: 42px; text-align:center;">Prédiction objective du patrimoine</p>'
 st.markdown(title_html, unsafe_allow_html=True)
