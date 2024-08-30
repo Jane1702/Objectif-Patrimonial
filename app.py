@@ -29,9 +29,9 @@ title_html = '''
 st.markdown(title_html, unsafe_allow_html=True)
 
 model = joblib.load('Objectif Patrimonial.pkl')
-
+st.markdown('<div class="form-container">', unsafe_allow_html=True)
 with st.form(key='prediction_form'):
-    st.markdown('<div class="form-container">', unsafe_allow_html=True)
+    
     st.markdown('<p style="font-family:Arial; font-size:20px; color:#166751;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
     
     cols = st.columns(3)
@@ -51,7 +51,7 @@ with st.form(key='prediction_form'):
     }
 
     submit_button = st.form_submit_button(label='Predict', help='Cliquez pour prédire l\'objectif patrimonial.')
-    st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 if submit_button:
     input_df = pd.DataFrame([data])
     try:
