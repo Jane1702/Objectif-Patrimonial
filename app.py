@@ -25,7 +25,7 @@ st.markdown(title_html, unsafe_allow_html=True)
 model = joblib.load('Objectif Patrimonial.pkl')
 
 with st.form(key='prediction_form'):
-    st.markdown('<p style="font-family:Arial; font-size:20px; color:#FFFFFF;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:Arial; font-size:20px; color:#166751;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
     
     cols = st.columns(3)
     
