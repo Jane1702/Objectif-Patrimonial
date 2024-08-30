@@ -6,9 +6,9 @@ st.set_page_config(page_title="PrÃ©diction Objectif Patrimonial", page_icon="ðŸ’
 # Add a background image or color (optional)
 page_bg_img = '''
 <style>
-body {
-background-color: #caf4ff;
-}
+    .stApp {
+        background-color: #f0f2f6;
+    }
 </style>
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
