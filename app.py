@@ -8,12 +8,7 @@ page_bg_img = '''
     .stApp {
         background-color: #00a581;
     }
-    .form-container {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+ 
 </style>
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
@@ -29,9 +24,8 @@ title_html = '''
 st.markdown(title_html, unsafe_allow_html=True)
 
 model = joblib.load('Objectif Patrimonial.pkl')
-st.markdown('<div class="form-container">', unsafe_allow_html=True)
-#with st.form(key='prediction_form'):
-with st.markdown('<div class="form-container">', unsafe_allow_html=True): 
+
+with st.form(key='prediction_form'):
 
     st.markdown('<p style="font-family:Arial; font-size:20px; color:#166751;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
     
@@ -52,7 +46,6 @@ with st.markdown('<div class="form-container">', unsafe_allow_html=True):
     }
 
     submit_button = st.form_submit_button(label='Predict', help='Cliquez pour prédire l\'objectif patrimonial.')
-st.markdown('</div>', unsafe_allow_html=True)
 if submit_button:
     input_df = pd.DataFrame([data])
     try:
