@@ -30,7 +30,7 @@ model = joblib.load('Objectif Patrimonial.pkl')
 
 # Feature input form
 with st.form(key='prediction_form'):
-    st.markdown('<p style="font-family:Arial; font-size:20px; color:#137a93;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:Arial; font-size:20px; color:#FFFFFF;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
     
     cols = st.columns(3)
     
