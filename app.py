@@ -19,7 +19,7 @@ st.image('logo.png', width=200)
 
 # Title with styling
 title_html = '''
-<h1 style="font-family:Arial, sans-serif; color:#137a93; font-size: 42px; text-align:center;">
+<h1 style="font-family:Arial, sans-serif; color:#c46042; font-size: 42px; text-align:center;">
     Prédiction objective du patrimoine
 </h1>
 '''
