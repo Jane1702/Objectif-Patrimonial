@@ -60,5 +60,5 @@ if submit_button:
 
         st.error(f'Error during prediction: {e}')
 
-"""
+
 
