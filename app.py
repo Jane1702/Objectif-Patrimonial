@@ -3,7 +3,6 @@ import joblib
 import pandas as pd
 st.set_page_config(page_title="Prédiction Objectif Patrimonial", page_icon="💰", layout="centered")
 
-# Add a background image or color (optional)
 page_bg_img = '''
 <style>
     .stApp {
@@ -13,11 +12,9 @@ page_bg_img = '''
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Add a logo image
 st.image('logo.png', width=200)
 
 
-# Title with styling
 title_html = '''
 <h1 style="font-family:Arial, sans-serif; color:#125b45; font-size: 42px; text-align:center;">
     Prédiction objective du patrimoine
@@ -25,10 +22,8 @@ title_html = '''
 '''
 st.markdown(title_html, unsafe_allow_html=True)
 
-# Load model
 model = joblib.load('Objectif Patrimonial.pkl')
 
-# Feature input form
 with st.form(key='prediction_form'):
     st.markdown('<p style="font-family:Arial; font-size:20px; color:#FFFFFF;">Veuillez entrer les détails ci-dessous :</p>', unsafe_allow_html=True)
     
@@ -50,7 +45,6 @@ with st.form(key='prediction_form'):
 
     submit_button = st.form_submit_button(label='Predict', help='Cliquez pour prédire l\'objectif patrimonial.')
 
-# Prediction and output
 if submit_button:
     input_df = pd.DataFrame([data])
     try:
