@@ -7,7 +7,7 @@ st.set_page_config(page_title="PrÃ©diction Objectif Patrimonial", page_icon="ðŸ’
 page_bg_img = '''
 <style>
     .stApp {
-        background-color: #defef7;
+        background-color: #00a581;
     }
 </style>
 '''
