@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
-st.set_page_config(page_title="Prédiction Objectif Patrimonial", page_icon="💼", layout="centered")
+st.set_page_config(page_title="Prédiction Objectif Patrimonial", page_icon="💰", layout="centered")
 
 # Add a background image or color (optional)
 page_bg_img = '''
