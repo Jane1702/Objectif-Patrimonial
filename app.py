@@ -14,7 +14,21 @@ background-color: #f0f2f6;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Add a logo image
-st.image('logo.png', width=200)
+#st.image('logo.png', width=200)
+logo_col, text_col = st.columns([1, 3])  # Adjust column width ratio as needed
+
+with logo_col:
+    st.image('logo.png', width=200)
+
+with text_col:
+    st.markdown(
+        '''
+        <h1 style="font-family:Arial, sans-serif; color:#137a93; font-size: 42px; padding-top: 20px;">
+            Bonjour Patrimoine
+        </h1>
+        ''', 
+        unsafe_allow_html=True
+    )
 
 # Title with styling
 title_html = '''
